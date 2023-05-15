@@ -36,8 +36,9 @@ public class GameUtil {
         boolean flag = false;
         Element[] elements = Element.values();
         for (Element tempElem : elements) {
-            if (playerStep.equals(tempElem.name())) {
+            if (playerStep.toLowerCase().equals(tempElem.name())) {
                 flag = true;
+                break;
             }
         }
         return flag;
